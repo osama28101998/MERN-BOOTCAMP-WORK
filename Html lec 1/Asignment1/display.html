@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Displaying Details</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Personal Details</legend>
+
+      Name : <span id="name"></span>
+      <br />
+      Email : <span id="email"></span>
+      <br />
+      Password : <span id="password"></span>
+      <br />
+      Gender : <span id="gender"></span>
+      <br />
+      Cnic/B-Form No : <span id="cnicbform"></span>
+      <br />
+      IUB Registration No : <span id="iub"></span>
+      <br />
+      Landline No : <span id="landline"></span>
+      <br />
+      Date of birth : <span id="dob"></span>
+      <br />
+      Mobile No : <span id="mobileno"></span>
+      <br />
+      Religion : <span id="religion"></span>
+      <br />
+      Nationality : <span id="nationality"></span>
+      <br />
+      Hafize Quran : <span id="hafizquran"></span>
+      <br />
+      Domicile : <span id="domicile"></span>
+      <br />
+      Postal Address : <span id="postal"></span>
+      <br />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Father Details</legend>
+
+      Father Name : <span id="fathername"></span>
+      <br />
+      Father CNIC : <span id="fathercnic"></span>
+      <br />
+      Father Profession : <span id="fatherprofession"></span>
+      <br />
+      Father Income : <span id="fatherincome"></span>
+      <br />
+      Father Mobile : <span id="fathermobile"></span>
+      <br />
+    </fieldset>
+    <script>
+      document.getElementById("name").innerHTML = localStorage.getItem("name");
+      document.getElementById("email").innerHTML =
+        localStorage.getItem("emailaddress");
+      document.getElementById("password").innerHTML =
+        localStorage.getItem("pass");
+      document.getElementById("gender").innerHTML =
+        localStorage.getItem("gender");
+      document.getElementById("cnicbform").innerHTML =
+        localStorage.getItem("cnic");
+      document.getElementById("iub").innerHTML =
+        localStorage.getItem("iubregno");
+      document.getElementById("landline").innerHTML =
+        localStorage.getItem("landline");
+      document.getElementById("dob").innerHTML =
+        localStorage.getItem("dateofbirth");
+      document.getElementById("mobileno").innerHTML =
+        localStorage.getItem("mobile");
+      document.getElementById("religion").innerHTML =
+        localStorage.getItem("religion");
+      document.getElementById("nationality").innerHTML =
+        localStorage.getItem("nationality");
+      document.getElementById("hafizquran").innerHTML =
+        localStorage.getItem("hafiz");
+      document.getElementById("domicile").innerHTML =
+        localStorage.getItem("domicile");
+      document.getElementById("postal").innerHTML =
+        localStorage.getItem("postaladdress");
+      document.getElementById("fathername").innerHTML =
+        localStorage.getItem("fathername");
+      document.getElementById("fathercnic").innerHTML =
+        localStorage.getItem("fathercnic");
+      document.getElementById("fatherprofession").innerHTML =
+        localStorage.getItem("fatherprofession");
+      document.getElementById("fatherincome").innerHTML =
+        localStorage.getItem("fatherincome");
+      document.getElementById("fathermobile").innerHTML =
+        localStorage.getItem("fathermobile");
+    </script>
+  </body>
+</html>

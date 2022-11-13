@@ -1,0 +1,29 @@
+body {
+  margin: 50px;
+  margin-top: 100px;
+  background-color: red;
+}
+p {
+  background-color: white;
+  text-align: justify;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  color: white;
+}
+
+#p1 {
+  font-size: medium;
+  color: white;
+  background-color: blue;
+}
+#p2 {
+  font-size: medium;
+  color: red;
+  background-color: green;
+}
+#p3 {
+  font-size: medium;
+  color: gold;
+  background-color: black;
+}

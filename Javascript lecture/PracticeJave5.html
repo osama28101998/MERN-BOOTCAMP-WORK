@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <label>Value : </label>
+      <input type="number" name="num" id="num" />
+      <br /><br />
+      <label>Action</label>
+      <select id="drop" onchange="cal()">
+        <option value="Square" id="1">Square</option>
+        <option value="Double" id="2">Double</option>
+      </select>
+      <br /><br />
+      <input type="text" id="res" />
+    </center>
+  </body>
+  <script>
+    function cal() {
+      var val = document.getElementById("num").value;
+      var selected = document.getElementById("drop").value;
+      var calculated;
+      switch (selected) {
+        case "Square":
+          calculated = val * val;
+          break;
+        case "Double":
+          calculated = parseInt(val) + parseInt(val);
+          break;
+      }
+      //   if (x == "Square") {
+      //     calculated = val * val;
+      //   } else {
+      //     calculated = parseInt(val) + parseInt(val);
+      //   }
+      document.getElementById("res").value = calculated;
+    }
+  </script>
+</html>

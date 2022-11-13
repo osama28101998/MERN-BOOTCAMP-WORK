@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <script>
+    function showValue() {
+      var nt;
+      var dayofmonth = 50;
+      var number = new Number(10);
+      number.isNan();
+      if (dayofmonth < 1 || dayofmonth > 31) {
+        dayofmonth = Number.NaN;
+        nt = typeof dayofmonth;
+        alert("Number must between 1 and 31");
+      }
+      document.write("value of day of month : " + dayofmonth);
+
+      document.write("type : " + nt);
+    }
+  </script>
+  <body>
+    <center>
+      <p>Click the following to see the result</p>
+
+      <button onclick="showValue();">Click Me</button>
+    </center>
+  </body>
+</html>

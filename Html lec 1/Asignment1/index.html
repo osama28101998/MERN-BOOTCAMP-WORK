@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Info</title>
+    <script>
+      function getInputValue() {
+
+        var gender;
+        var email=document.getElementById("email").value;
+        localStorage.setItem("emailaddress",email);
+        var password=document.getElementById("password").value;
+        localStorage.setItem("pass",password);
+        var name = document.getElementById("name").value;
+        localStorage.setItem("name",name);
+        var cnic =
+          document.getElementById("cnicbform1").value +
+          "-" +
+          document.getElementById("cnicbform2").value +
+          "-" +
+          document.getElementById("cnicbform3").value;
+        localStorage.setItem("cnic",cnic);
+        if (rd[0].checked == true) {
+          gender = "male";
+        } else {
+          gender = "Female";
+        }
+        localStorage.setItem("gender",gender);
+        var iubregno = document.getElementById("iubregno").value;
+        localStorage.setItem("iubregno",iubregno);
+        var landline = document.getElementById("landline").value;
+        localStorage.setItem("landline",landline);
+        var dob = document.getElementById("date").value;
+        localStorage.setItem("dateofbirth",dob);
+        var mobile = "+92" + document.getElementById("mobileno").value;
+        localStorage.setItem("mobile",mobile);
+        var religion = document.getElementById("religion").value;
+        localStorage.setItem("religion",religion);
+        var nationality=document.getElementById("nationality").value;
+        localStorage.setItem("nationality",nationality);
+        var hafizequran=document.getElementById("hq").value;
+        localStorage.setItem("hafiz",hafizequran);
+        var domicile = document.getElementById("domicile").value;
+        localStorage.setItem("domicile",domicile);
+        var postaladdress = document.getElementById("postaladdress").value;
+        localStorage.setItem("postaladdress",postaladdress);
+        var fathername = document.getElementById("fathername").value;
+        localStorage.setItem("fathername",fathername);
+        var fatherprofession =
+          document.getElementById("fatherprofession").value;
+          localStorage.setItem("fatherprofession",fatherprofession);
+        var fathermobile = document.getElementById("fathermobile").value;
+        localStorage.setItem("fathermobile",fathermobile);
+        var fatherincome = document.getElementById("mi").value;
+        localStorage.setItem("fatherincome",fatherincome);
+        var fathercnic =
+          document.getElementById("f1").value +
+          "-" +
+          document.getElementById("f2").value +
+          "-" +
+          document.getElementById("f3").value;
+          localStorage.setItem("fathercnic",fathercnic);
+        // alert(fathercnic);
+      }
+
+      function datareset() {
+        document.getElementById("email").value="";
+        document.getElementById("password").value="";
+        document.getElementById("name").value = "";
+        document.getElementById("cnicbform1").value="";
+        document.getElementById("cnicbform2").value="";
+        document.getElementById("cnicbform3").value="";
+        document.getElementById("iubregno").value="";
+        document.getElementById("landline").value="";
+       // document.getElementById("date").value;
+        document.getElementById("mobileno").value="";
+        document.getElementById("religion").value="";
+        document.getElementById("domicile").value="";
+        document.getElementById("postaladdress").value="";
+        document.getElementById("fathername").value="";
+        document.getElementById("fatherprofession").value="";
+        document.getElementById("fathermobile").value="";
+        document.getElementById("mi").value="";
+        document.getElementById("f1").value="";
+        document.getElementById("f2").value="";
+        document.getElementById("f3").value="";
+
+
+      }
+    </script>
+  </head>
+  <body>
+    <form action="display.html" target="_blank">
+      <center>
+        <label>Email Address</label>
+           <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
+           &emsp14;&emsp14;&emsp14;&emsp14;&emsp14; &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+           <label>Password</label>
+           <input type="password" name="password" id="password" placeholder="Enter Password" required>
+      </center>
+    <fieldset>
+      <legend>Personal Profile</legend>
+
+      <table>
+        <tr>
+          <td><label>Name</label></td>
+
+          <td>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input type="text" name="name" id="name" placeholder="Enter Name" required  />
+          </td>
+
+          <td>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label>Gender</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input type="radio" name="rd" id="rd" /> Male:
+
+            <input type="radio" name="rd" id="rd" /> Female:
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Cnic/B-Form No.</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+
+            <input
+              type="text"
+              name="cnicbform1"
+              id="cnicbform1"
+              size="1"
+              maxlength="5"
+              placeholder="12345"
+              required
+            />
+            <label> - </label>
+            <input
+              type="text"
+              name="cnicbform2"
+              id="cnicbform2"
+              size="4"
+              maxlength="7"
+              required
+              placeholder="1111111"
+            />
+            <label> - </label>
+            <input
+
+              type="text"
+              name="cnicbform3"
+              id="cnicbform3"
+              size="1"
+              maxlength="1"
+              placeholder="1"
+              required
+            />
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label>Picture</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="file"
+              name="file"
+              id="file"
+              accept="image/gif, image/jpeg, image/png"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br />
+            <label>IUB Registration No.</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="text"
+              name="iubregno"
+              id="iubregno"
+              placeholder="Enter IUB Regno"
+              required
+            />
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label for="gender">Landline No.</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="number"
+              name="landline"
+              id="landline"
+              placeholder="Enter Landline No"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <br />
+            <label>Date Of Birth</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input type="date" name="date" id="date" />
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label for="gender">Mobile No.</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+
+            <input
+              type="text"
+              name="cc"
+              id="cc"
+              disabled
+              placeholder="+92"
+              size="1"
+
+            />
+            <label> - </label>
+            <input
+              type="number"
+
+              size="1"
+              style="width: 8em"
+              id="mobileno"
+              name="mobileno"
+              placeholder="3331234567"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Religion</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <select name="religion" id="religion">
+              <option value="Islam">Islam</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Christian">Christain</option>
+            </select>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label for="gender">Nationality</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+
+            <input
+              type="text"
+              name="nationality"
+              id="nationality"
+              placeholder="eg,Pakistani etc"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Hafize Quran</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <select name="hq" id="hq">
+              <option value="">--Select--</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <label for="gender">Domicile(Province)</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <select name="domicile" id="domicile" style="width: 13em">
+              <option value="">--Select--</option>
+              <option value="punjab">Punjab</option>
+              <option value="sindh">Sindh</option>
+              <option value="kpk">KPK</option>
+              <option value="balochistan">Balochistan</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Postal Address</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <textarea
+              name="postaladdress"
+              id="postaladdress"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Father Information</legend>
+
+      <table>
+        <tr>
+          <td>
+            <br />
+            <label>Father Name</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="text"
+              name="fathername"
+              id="fathername"
+              placeholder="Enter Father Name"
+              required
+            />
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14; &emsp14;&emsp14;
+            <label>CNIC No.</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+
+            <input
+              type="text"
+              name="fathercnic1"
+              id="f1"
+              size="1"
+              maxlength="5"
+              required
+            />
+            <label> - </label>
+            <input
+              type="text"
+              name="fathercnic2"
+              id="f2"
+              size="4"
+              maxlength="7"
+              required
+            />
+            <label> - </label>
+            <input
+              type="text"
+              name="fathercnic3"
+              id="f3"
+              size="1"
+              maxlength="1"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Profession</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="text"
+              name="fatherprofession"
+              id="fatherprofession"
+              placeholder="Enter Father Profession"
+              required
+            />
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14; &emsp14;&emsp14;
+            <label>Monthly Income</label>
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;
+
+            <input
+              type="number"
+              name="monthlyincome"
+              id="mi"
+              placeholder="Enter Father Monthly Income"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <label>Mobile No.</label>
+          </td>
+
+          <td>
+            <br />
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+            <input
+              type="number"
+              name="fathermobile"
+              id="fathermobile"
+              placeholder="Enter Father Mobile"
+              required
+            />
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br />
+    <center>
+      <input type="submit"
+        style="height: 5em; width: 15em"
+        value="Submit"
+        onclick="getInputValue()"
+      />
+    </form>
+      <input type="button" onclick="datareset()" style="height: 5em; width: 15em" value="Reset" />
+    </center>
+  </body>
+
+</html>
