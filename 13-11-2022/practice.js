@@ -27,3 +27,6 @@ function fun() {
 };
 
 // console.log(());
+
+var phone = 1231n;
+console.log(typeof phone);

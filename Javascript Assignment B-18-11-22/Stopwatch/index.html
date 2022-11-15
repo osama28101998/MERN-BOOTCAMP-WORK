@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+<link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <body>
+        <div class="container">
+            <h1>
+                Stop Watch</h1>
+            <div id="time">
+                <span class="digit" id="hr">
+                  00</span>
+                <span class="txt">Hr</span>
+                <span class="digit" id="min">
+                  00</span>
+                <span class="txt">Min</span>
+                <span class="digit" id="sec">
+                  00</span>
+                <span class="txt">Sec</span>
+                <span class="digit" id="count">
+                  00</span>
+            </div>
+            <div id="buttons">
+                <button class="btn btn-success" onclick="start()">
+                  Start</button>
+                <button class="btn btn-warning" onclick="stop()" >
+                  Stop</button>
+                <button class="btn btn-danger" onclick="reset()" > Reset</button>
+                <button class="btn btn-dark"  onclick="duration()">
+                    Duration</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
