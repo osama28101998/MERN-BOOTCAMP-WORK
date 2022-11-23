@@ -1,4 +1,5 @@
 function kid(props) {
+  console.log(props);
   return (
     <div
       style={{

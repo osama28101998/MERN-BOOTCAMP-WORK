@@ -15,7 +15,13 @@ function parents(props) {
 
       <div style={{ display: "flex", gap: "12px" }}>
         {props.bacha.map((e) => {
-          return <Kid name={e.name} gender={e.gender} dob={e.dob} />;
+          return (
+            <Kid
+              name={e.name ?? "no kid yet"}
+              gender={e.gender ?? "no kid yet"}
+              dob={e.dob ?? "no kid yet"}
+            />
+          );
         })}
       </div>
     </div>

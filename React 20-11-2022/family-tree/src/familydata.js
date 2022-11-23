@@ -64,11 +64,11 @@
 
 const obj = [
   {
-    dadaname: "zia-ul-haq",
+    dadaname: "Zia-ul-haq",
     dadiami: "bibi",
     children: [
       {
-        childname: "shahzad-ul-haq",
+        childname: "Shahzad-ul-haq",
         childwife: "Sajida Shahzad",
         children: [
           {
